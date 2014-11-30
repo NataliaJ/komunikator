@@ -80,6 +80,7 @@ public class MainActivity extends Activity {
         push.setChannel("Giants");
         push.setMessage(editText.getText().toString());
         push.sendInBackground();
+        editText.setText("");
     }
 
     public void onEvent (UpdateMessagerListEvent updateMessagerListEvent){
